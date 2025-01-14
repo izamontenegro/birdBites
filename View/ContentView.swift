@@ -13,12 +13,13 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("Status do Comedouro")
+                .foregroundStyle(.pink)
                 .font(.largeTitle)
                 .padding()
 
             if let data = mqttManager.receivedData {
                 VStack(alignment: .leading, spacing: 10) {
-                    Text("Luminosidade: \(data.luminosidade) lux")
+                    Text("Luminosidade: \(data.luminosidade)")
                     Text("Temperatura Externa: \(data.temperaturaExterno) °C")
                     Text("Umidade Externa: \(data.umidadeExterno) %")
                     Text("Temperatura Interna: \(data.temperaturaInterno) °C")
