@@ -11,7 +11,7 @@ import SwiftUI
 struct birdBitesApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MockDataView()
         }
     }
 }
