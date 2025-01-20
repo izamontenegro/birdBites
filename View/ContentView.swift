@@ -11,9 +11,8 @@ struct ContentView: View {
     @StateObject private var mqttManager = MQTTManager()
     
     var body: some View {
-        VStack {
-            Text("hello")
-        }
+        TabBar()
+            .padding()
     }
 }
 
