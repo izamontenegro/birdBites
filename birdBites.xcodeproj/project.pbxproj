@@ -34,9 +34,22 @@
 		36A596812D36F03000397079 /* birdBitesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = birdBitesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		128A00FB2D4964EA00F60507 /* Exceptions for "birdBites" folder in "birdBitesUITests" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				"Preview Content/BirdBoxModel.mlpackage",
+			);
+			target = 36A596802D36F03000397079 /* birdBitesUITests */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		36A596692D36F02E00397079 /* birdBites */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				128A00FB2D4964EA00F60507 /* Exceptions for "birdBites" folder in "birdBitesUITests" target */,
+			);
 			path = birdBites;
 			sourceTree = "<group>";
 		};
