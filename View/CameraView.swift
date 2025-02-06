@@ -152,7 +152,7 @@ struct CameraView: View {
     }
     
     func detectBirdSpecies(for image: UIImage?) {
-        guard let image = image, let model = try? VNCoreMLModel(for: BirdBoxModel().model) else {
+        guard let image = image, let model = try? VNCoreMLModel(for: bird().model) else {
             resultText = "Failed to load model or image"
             return
         }
