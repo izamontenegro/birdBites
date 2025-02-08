@@ -11,8 +11,42 @@ struct ContentView: View {
     @StateObject private var mqttManager = MQTTManager()
     
     var body: some View {
-        TabBar()
-            .padding()
+        
+        // view do figma
+        TabView {
+            HomeView()
+                .tabItem{
+                    // aqui colocar o icone e tals
+                    Text("inicio")
+                }
+            CameraView(sourceType: .camera)
+                .tabItem{
+                    Text("camera")
+                }
+            ColecaoView()
+                .tabItem{
+                    Text("colecao")
+                }
+        }
+        .navigationBarBackButtonHidden(true)
+        
+        // view de testes
+        //        TabView {
+        //            MockDataView()
+        //                .tabItem{
+        //                    // aqui colocar o icone e tals
+        //                    Text("dados mockados")
+        //                }
+        //            CameraView()
+        //                .tabItem{
+        //                    Text("camera")
+        //                }
+        //            TelaBlue()
+        //                .tabItem{
+        //                    Text("bluetooth")
+        //                }
+        //        }
+        //        .navigationBarBackButtonHidden(true)
     }
 }
 

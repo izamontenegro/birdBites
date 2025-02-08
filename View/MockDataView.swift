@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// aqui nessa view tem os exemplos de como pegar os dados, quando precisar exibir um eh so vir aqui e copiar
+
 struct MockDataView: View {
     @StateObject private var mqttManager = MQTTManager()
 

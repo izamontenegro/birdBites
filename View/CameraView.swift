@@ -81,7 +81,7 @@ struct CameraView: View {
     @State private var resultText: String = "Select or take a photo to recognize the bird species."
     @StateObject private var cameraController = CameraController()
     @State private var isImagePickerPresented = false
-    @State private var sourceType: UIImagePickerController.SourceType = .photoLibrary
+    @State public var sourceType: UIImagePickerController.SourceType
     @State private var selectedImage: UIImage?
     
     var body: some View {
@@ -254,7 +254,7 @@ struct ImagePicker: UIViewControllerRepresentable {
 
 struct CameraView_Previews: PreviewProvider {
     static var previews: some View {
-        CameraView()
+        CameraView(sourceType: .photoLibrary)
     }
 }
 

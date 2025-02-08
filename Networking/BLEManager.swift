@@ -6,6 +6,8 @@
 //
 import CoreBluetooth
 
+// aqui sao os metodos que vao enviar dados do bluetooth
+
 class BLEManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, ObservableObject {
     var centralManager: CBCentralManager!
     var connectedPeripheral: CBPeripheral?
