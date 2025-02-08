@@ -60,11 +60,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		36A596B42D36F37C00397079 /* ViewModel */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		36A596B52D36F38200397079 /* View */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = View;
@@ -109,7 +104,6 @@
 			children = (
 				36A596B62D36F3B400397079 /* Networking */,
 				36A596B52D36F38200397079 /* View */,
-				36A596B42D36F37C00397079 /* ViewModel */,
 				36A596B32D36F37600397079 /* Model */,
 				36A596AA2D36F10300397079 /* Components */,
 				36A596692D36F02E00397079 /* birdBites */,
@@ -148,7 +142,6 @@
 				36A596692D36F02E00397079 /* birdBites */,
 				36A596AA2D36F10300397079 /* Components */,
 				36A596B32D36F37600397079 /* Model */,
-				36A596B42D36F37C00397079 /* ViewModel */,
 				36A596B52D36F38200397079 /* View */,
 				36A596B62D36F3B400397079 /* Networking */,
 			);
@@ -446,6 +439,7 @@
 				DEVELOPMENT_TEAM = 2BF575N85D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = NSCameraUsageDescription;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -475,6 +469,7 @@
 				DEVELOPMENT_TEAM = 2BF575N85D;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = NSCameraUsageDescription;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

@@ -24,7 +24,6 @@ class MQTTManager: ObservableObject {
         mqttClient?.password = nil
         mqttClient?.keepAlive = 60
         mqttClient?.delegate = self
-        mqttClient?.connect()
     }
 
     func publish(message: String, topic: String) {
