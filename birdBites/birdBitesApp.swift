@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftData
 
 @main
 struct birdBitesApp: App {
     var body: some Scene {
         WindowGroup {
-            TelaBlue()
+           TelaInicialView()
         }
+        .modelContainer(for: [User.self])
     }
 }

@@ -11,8 +11,22 @@ struct ContentView: View {
     @StateObject private var mqttManager = MQTTManager()
     
     var body: some View {
-        TabBar()
-            .padding()
+        TabView {
+            HomeView()
+                .tabItem{
+                    // aqui colocar o icone e tals
+                    Text("inicio")
+                }
+            CameraView()
+                .tabItem{
+                    Text("camera")
+                }
+            ColecaoView()
+                .tabItem{
+                    Text("colecao")
+                }
+        }
+        .navigationBarBackButtonHidden(true)
     }
 }
 
