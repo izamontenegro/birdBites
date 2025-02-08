@@ -12,10 +12,12 @@ class User: Identifiable, Hashable {
     
     var userName: String
     var password: String
+    
+    // esse aqui eu ainda nao sei direito unheunhe
     var comedouros: [ComedouroData]
     
     init(
-        name: String = "usuario",
+        name: String = "",
         password: String = ""
     ) {
         self.userName = name

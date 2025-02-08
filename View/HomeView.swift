@@ -26,7 +26,9 @@ struct HomeView: View {
                             .fontWeight(.bold)
                         
                         // fazer aqui um foreach user.comedouros Hsctak com os cards
-                        CardComedouro()
+                        NavigationLink(destination: ComedouroExpandidoView()){
+                            CardComedouro()
+                        }
                         
                         NavigationLink(destination: AdicionarComedouroView()) {
                             Text("adicionar comedouro")

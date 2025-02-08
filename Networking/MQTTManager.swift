@@ -8,6 +8,8 @@
 import Foundation
 import CocoaMQTT
 
+// metodos do mqtt pra receber os dados do comedouro, lembrando q pra eles funcionarem tem que rodar aquele codigo em pythond do colab e dps rodar o app
+
 class MQTTManager: ObservableObject {
     @Published var receivedData: ComedouroData?
 
