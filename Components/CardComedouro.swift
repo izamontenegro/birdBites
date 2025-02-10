@@ -10,13 +10,12 @@
 import SwiftUI
 
 struct CardComedouro: View {
+    // aqui as variaveis de controle das coisas, mudar a capa eas barras conforme os dados do comedouro
     var body: some View {
-        VStack {
-            Image(systemName: "bird.fill") //imagem do comedouro
+        ZStack(alignment: .bottom) {
+            Image("comedouroCapaDia")
                 .resizable()
                 .scaledToFit()
-                .foregroundStyle(Color.verdeDetalhes)
-                .frame(height: 220)
             
             VStack(alignment: .leading) {
                 Text("Sítio Sossego")  // nome comedouro
@@ -33,11 +32,9 @@ struct CardComedouro: View {
             .padding()
             .background(Color.white)
             .cornerRadius(12)
+            .padding()
         }
-        .padding()
-        .background(Color.yellow.opacity(0.3))
-        .cornerRadius(20)
-//        .padding() tirando aq pra nao bugar na home mas provavelmente ainda vai unheunhe
+        .padding(.trailing)
     }
 }
 

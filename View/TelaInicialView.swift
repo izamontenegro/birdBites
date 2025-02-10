@@ -18,12 +18,17 @@ struct TelaInicialView: View {
                 if !users.isEmpty {
                     ContentView()
                 } else {
-                    NavigationLink(destination: LoginView(usuario: User())) {
-                        Text("login")
-                            .padding()
-                            .background(Color.blue)
-                            .foregroundColor(.white)
-                            .cornerRadius(8)
+                    
+                    VStack {
+                        NavigationLink(destination: LoginView(usuario: User())) {
+                            Text("login")
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
+                        
+                        .padding()
                     }
                 }
             }
