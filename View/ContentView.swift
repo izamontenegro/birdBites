@@ -20,7 +20,7 @@ struct ContentView: View {
                     // aqui colocar o icone e tals
                     Text("inicio")
                 }
-            CameraView()
+            CameraView(sourceType: .camera)
                 .tabItem{
                     Text("camera")
                 }
