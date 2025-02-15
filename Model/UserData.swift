@@ -13,8 +13,8 @@ class User: Identifiable, Hashable {
     var userName: String
     var password: String
     
-    // esse aqui eu ainda nao sei direito unheunhe
-    var comedouros: [ComedouroData]
+    // esse aqui acho q eh so quando receber varios comedouros
+    // var comedouros: [ComedouroInfo]
     
     init(
         name: String = "",
@@ -22,6 +22,5 @@ class User: Identifiable, Hashable {
     ) {
         self.userName = name
         self.password = password
-        self.comedouros = []
     }
 }

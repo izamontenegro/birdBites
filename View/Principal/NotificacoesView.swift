@@ -10,7 +10,10 @@ import SwiftData
 
 struct NotificacoesView: View {
     var body: some View {
-        Text("notificacoes")
+        VStack {
+            Text("notificacoes")
+        }
+        .navigationTitle("notificações")
     }
 }
 

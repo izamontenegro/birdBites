@@ -1,16 +1,20 @@
 //
-//  LoginView.swift
+//  CriarContaView.swift
 //  birdBites
 //
-//  Created by Izadora de Oliveira Albuquerque Montenegro on 08/02/25.
+//  Created by Izadora de Oliveira Albuquerque Montenegro on 15/02/25.
 //
+
 import SwiftUI
 import SwiftData
 
-struct LoginView: View {
+struct CriarContaView: View {
     @Environment(\.modelContext) private var context
     @State var usuario: User
-    @State private var isLoggedIn = false 
+    @State private var isLoggedIn = false
+    @State private var senha: String = " "
+    @State private var senhaConfirmacao: String = " "
+    
 
     @MainActor func addUser() {
         context.insert(usuario)
@@ -19,7 +23,7 @@ struct LoginView: View {
 
     var body: some View {
         VStack {
-            Text("loguinho")
+            Text("Criar conta")
                 .font(.largeTitle)
                 .padding()
 
@@ -32,7 +36,7 @@ struct LoginView: View {
             Button {
                 addUser()
             } label: {
-                Text("login")
+                Text("criar conta")
                     .padding(.horizontal, UIScreen.main.bounds.width / 5)
                     .padding(.vertical, 10)
                     .background(Color.green)
@@ -46,13 +50,23 @@ struct LoginView: View {
                 .background(Color.gray.opacity(0.2))
                 .cornerRadius(13)
                 .padding(.bottom, 20)
+            TextField("Senha", text: $senha)
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(13)
+                .padding(.bottom, 20)
+            TextField("Confirmar senha", text: $senhaConfirmacao)
+                .padding()
+                .background(Color.gray.opacity(0.2))
+                .cornerRadius(13)
+                .padding(.bottom, 20)
         }
     }
 }
 
-struct LoginView_Preview: PreviewProvider {
+struct CriarContaView_Preview: PreviewProvider {
     static var previews: some View {
-        LoginView(usuario: User())
+        CriarContaView(usuario: User())
             .previewLayout(.sizeThatFits)
             .padding()
     }
