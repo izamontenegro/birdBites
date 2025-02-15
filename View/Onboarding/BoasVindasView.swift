@@ -1,14 +1,14 @@
 //
-//  TelaInicialView.swift
+//  BoasVindasView.swift
 //  birdBites
 //
-//  Created by Izadora de Oliveira Albuquerque Montenegro on 08/02/25.
+//  Created by Izadora de Oliveira Albuquerque Montenegro on 15/02/25.
 //
 
 import SwiftUI
 import SwiftData
 
-struct TelaInicialView: View {
+struct BoasVindasView: View {
     @Query var users: [User]
     var user: User? { users.first }
     
@@ -21,7 +21,15 @@ struct TelaInicialView: View {
                     
                     VStack {
                         NavigationLink(destination: LoginView(usuario: User())) {
-                            Text("login")
+                            Text("Login")
+                                .padding()
+                                .background(Color.blue)
+                                .foregroundColor(.white)
+                                .cornerRadius(8)
+                        }
+                        
+                        NavigationLink(destination: LoginView(usuario: User())) {
+                            Text("Criar conta")
                                 .padding()
                                 .background(Color.blue)
                                 .foregroundColor(.white)
@@ -37,6 +45,6 @@ struct TelaInicialView: View {
 }
 
 #Preview {
-    TelaInicialView()
+    BoasVindasView()
 }
 

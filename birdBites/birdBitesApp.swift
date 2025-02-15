@@ -12,8 +12,8 @@ import SwiftData
 struct birdBitesApp: App {
     var body: some Scene {
         WindowGroup {
-           TelaInicialView()
+            BoasVindasView()
         }
-        .modelContainer(for: [User.self])
+        .modelContainer(for: [User.self, ComedouroInfo.self])
     }
 }

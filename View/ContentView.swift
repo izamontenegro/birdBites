@@ -12,40 +12,40 @@ struct ContentView: View {
     var body: some View {
         
         // view do figma
-//        TabView {
-//            HomeView()
-//                .tabItem{
-//                    // aqui colocar o icone e tals
-//                    Text("inicio")
-//                }
-//            CameraView(sourceType: .camera)
-//                .tabItem{
-//                    Text("camera")
-//                }
-//            ColecaoView()
-//                .tabItem{
-//                    Text("colecao")
-//                }
-//        }
-//        .navigationBarBackButtonHidden(true)
-        
-//
-                TabView {
-                    MockDataView()
-                        .tabItem{
-                            // aqui colocar o icone e tals
-                            Text("dados mockados")
-                        }
-                    CameraView(sourceType: .camera)
-                        .tabItem{
-                            Text("camera")
-                        }
-                    TelaBlue()
-                        .tabItem{
-                            Text("bluetooth")
-                        }
+        TabView {
+            HomeView()
+                .tabItem{
+                    // aqui colocar o icone e tals
+                    Text("inicio")
                 }
-                .navigationBarBackButtonHidden(true)
+            CameraView(sourceType: .camera)
+                .tabItem{
+                    Text("camera")
+                }
+            ColecaoView()
+                .tabItem{
+                    Text("colecao")
+                }
+        }
+        .navigationBarBackButtonHidden(true)
+        
+//   View de testes
+//                TabView {
+//                    MockDataView()
+//                        .tabItem{
+//                            // aqui colocar o icone e tals
+//                            Text("dados mockados")
+//                        }
+//                    CameraView(sourceType: .camera)
+//                        .tabItem{
+//                            Text("camera")
+//                        }
+//                    TelaBlue()
+//                        .tabItem{
+//                            Text("bluetooth")
+//                        }
+//                }
+//                .navigationBarBackButtonHidden(true)
     }
 }
 
