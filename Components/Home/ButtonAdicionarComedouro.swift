@@ -10,7 +10,7 @@ import SwiftUI
 struct ButtonAdicionarComedouro: View {
     var body: some View {
         VStack {
-            NavigationLink(destination: AdicionarComedouroView(comedouro: ComedouroInfo())) {
+            NavigationLink(destination: instrucao1()) {
                 Text("adicionar comedouro")
                     .foregroundStyle(.white)
                     .padding()

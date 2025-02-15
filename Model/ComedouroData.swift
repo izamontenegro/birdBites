@@ -13,5 +13,5 @@ struct ComedouroData: Codable {
     let umidadeExterno: Double
     let temperaturaInterno: Double
     let umidadeInterno: Double
-    let quantidadeComida: Int
+    let quantidadeComida: Double
 }

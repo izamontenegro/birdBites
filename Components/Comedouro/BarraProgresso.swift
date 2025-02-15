@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct BarraProgresso: View {
-    var progresso: CGFloat = 0.5
+    var dados: Double = 0.0
     var tipo: Int = 0
     
     var body: some View {
@@ -22,11 +22,11 @@ struct BarraProgresso: View {
                     RoundedRectangle(cornerRadius: 15)
                         .foregroundStyle(tipo == 1 ? Color.purple : Color.verdeDetalhes)
                         .frame(
-                            width: geometry.size.width * progresso,
+                            width: geometry.size.width * dados,
                             height: geometry.size.height
                         )
                     
-                    Text("\(Int(progresso * 100))%")
+                    Text("\(Int(dados * 100))%")
                         .foregroundStyle(.white)
                         .padding(.leading)
                         .font(.footnote)
@@ -46,8 +46,8 @@ struct BarraProgresso: View {
 
 #Preview {
     VStack(spacing: 20) {
-        BarraProgresso(progresso: 0.6, tipo: 1)
-        BarraProgresso(progresso: 0.3, tipo: 0)
+        BarraProgresso(dados: 20.0, tipo: 1)
+        BarraProgresso(dados: 20.0, tipo: 0)
     }
     .padding()
 }

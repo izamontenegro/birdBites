@@ -18,11 +18,10 @@ struct ComedourosListView: View {
                 
             }
             else {
-               
-                    ScrollView(.horizontal) {
-                        HStack {
+                ScrollView(.horizontal) {
+                    HStack {
                         ForEach(comedouros) { comedouro in
-                            NavigationLink(destination: ComedouroExpandidoView(nomeComedouro: comedouro.comedouroName)){
+                            NavigationLink(destination: ComedouroExpandidoView(comedouro: comedouro)){
                                 CardComedouro(comedouroNome: comedouro.comedouroName)
                             }
                         }
