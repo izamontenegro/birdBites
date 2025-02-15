@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+// aqui eu to controlando a navegacao pela tab view
+
 struct ContentView: View {
     
     var body: some View {
@@ -18,7 +20,7 @@ struct ContentView: View {
                     // aqui colocar o icone e tals
                     Text("inicio")
                 }
-            CameraView(sourceType: .camera)
+            CameraView()
                 .tabItem{
                     Text("camera")
                 }

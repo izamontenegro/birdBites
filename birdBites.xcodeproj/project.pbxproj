@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		365A3CD32D612EE50096511F /* ReadMe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 365A3CD22D612EE10096511F /* ReadMe.swift */; };
 		36A596962D36F09800397079 /* CocoaMQTT in Frameworks */ = {isa = PBXBuildFile; productRef = 36A596952D36F09800397079 /* CocoaMQTT */; };
 		36A596982D36F09800397079 /* CocoaMQTTWebSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 36A596972D36F09800397079 /* CocoaMQTTWebSocket */; };
 /* End PBXBuildFile section */
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		365A3CD22D612EE10096511F /* ReadMe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadMe.swift; sourceTree = "<group>"; };
 		36A596672D36F02E00397079 /* birdBites.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = birdBites.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A596772D36F03000397079 /* birdBitesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = birdBitesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		36A596812D36F03000397079 /* birdBitesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = birdBitesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -102,6 +104,7 @@
 		36A5965E2D36F02E00397079 = {
 			isa = PBXGroup;
 			children = (
+				365A3CD22D612EE10096511F /* ReadMe.swift */,
 				36A596B62D36F3B400397079 /* Networking */,
 				36A596B52D36F38200397079 /* View */,
 				36A596B32D36F37600397079 /* Model */,
@@ -276,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				365A3CD32D612EE50096511F /* ReadMe.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
