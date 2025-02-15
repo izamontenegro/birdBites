@@ -48,7 +48,6 @@ class BLEManager: NSObject, CBCentralManagerDelegate, CBPeripheralDelegate, Obse
             }
         }
         
-        print("📡 Dispositivo encontrado: \(deviceName)")
     }
     
     func connectToPeripheral(_ peripheral: CBPeripheral) {
